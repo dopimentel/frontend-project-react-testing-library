@@ -15,10 +15,10 @@ it('a página contém um heading h2 com o texto About Pokédex', () => {
 it('a página contém dois parágrafos com texto sobre a Pokédex;', () => {
   renderWithRouter(<About />);
   const paragraph1 = screen.getByText(
-    /this application simulates a pokédex, a digital encyclopedia containing all pokémon/i
+    /this application simulates a pokédex, a digital encyclopedia containing all pokémon/i,
   );
   const paragraph2 = screen.getByText(
-    /one can filter pokémon by type, and see more details for each one of them/i
+    /one can filter pokémon by type, and see more details for each one of them/i,
   );
   expect(paragraph1).toBeVisible();
   expect(paragraph2).toBeVisible();
